@@ -1,0 +1,31 @@
+{
+    "name": "cors-proxy",
+    "version": "0.0.1",
+    "description": "A simple express-based proxy server to manage CORS policy for local development",
+    "main": "main.js",
+    "bin": {
+        "simple-ts-app": "bin/install.mjs"
+    },
+    "scripts": {
+        "dev": "tsc && nodemon",
+        "build": "tsc",
+        "proxy": "tsc && node ./dist/main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.20",
+        "prettier": "^3.1.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.8.4"
+    },
+    "dependencies": {
+        "@types/cookie-parser": "^1.4.6",
+        "@types/cors": "^2.8.16",
+        "@types/express": "^4.17.21",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "express": "^4.18.2"
+    }
+}
